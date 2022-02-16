@@ -80,6 +80,9 @@
                     </view>
                     <connections>
                         <outlet property="addText2" destination="9mO-sF-7ng" id="UHs-Hq-cOW"/>
+                        <outlet property="imgViewA" destination="Oyt-md-hzk" id="WqF-bJ-cmK"/>
+                        <outlet property="imgViewB" destination="4gv-Qa-opu" id="NYf-Ky-VO0"/>
+                        <outlet property="imgViewC" destination="IB8-A0-WOw" id="LDH-AD-fz4"/>
                         <outlet property="insrtText1" destination="Y6W-uh-8kQ" id="m2E-b2-Q1w"/>
                         <outlet property="productDisplayLabel" destination="ysc-Bz-FOG" id="1jY-se-a1F"/>
                     </connections>
