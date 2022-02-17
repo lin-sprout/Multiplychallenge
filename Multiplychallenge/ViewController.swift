@@ -55,6 +55,10 @@ class ViewController: UIViewController {
         
         dataCollectB = addText2.text ?? ""
         
+        var firstNum = Int(dataCollectA) ?? 0
+        var secdNum = Int(dataCollectB) ?? 0
+        var multiply = firstNum * secdNum
+        productDisplayLabel.text = "The Product is \(multiply)"
         
     }
     
