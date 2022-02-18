@@ -6,6 +6,8 @@
 //  fueled by Lemon Demon: Two Trucks
 //
 // how to print integer in string? productLabel.text = "the product is \(productNumber)"
+//resign first responder
+
 
 import UIKit
 
@@ -44,13 +46,20 @@ class ViewController: UIViewController {
         //imgViewA.image = UIImage(named: "lonk")
         //imgViewB.image = UIImage(named: "pikchu")
         //imgViewC.image = UIImage(named: "kat")
-        
+        //if var == 64{outlet.image} = UIImage(named: "filename")
+        //for even odd need modulus, need new variable.
         
     }
 
     
+    func textFieldDidEndEditing(_ insrtText1: UITextField) { insrtText1.resignFirstResponder()}
+    
+    func textFieldDidEndEditing( addText2: UITextField) { addText2.resignFirstResponder()}
+    
+    
+            
     @IBAction func calculatedProduct(_ sender: Any) {
-        //double ?? is an optional, it will assign the default value to the right of the ??nif user doesnt enter anything
+        //double ?? is an optional, it will assign the default value to the right of the ?? if user doesnt enter anything
         dataCollectA = insrtText1.text ?? ""
         
         dataCollectB = addText2.text ?? ""
@@ -60,7 +69,10 @@ class ViewController: UIViewController {
         var multiply = firstNum * secdNum
         productDisplayLabel.text = "The Product is \(multiply)"
         
+        
+        
     }
+    
     
     
 
