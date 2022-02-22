@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         //imgViewA.image = UIImage(named: "lonk")
         //imgViewB.image = UIImage(named: "pikchu")
         //imgViewC.image = UIImage(named: "kat")
-        //if var == 64{outlet.image} = UIImage(named: "filename")
+        
         //for even odd need modulus, need new variable.
         
     }
@@ -68,13 +68,39 @@ class ViewController: UIViewController {
         var secdNum = Int(dataCollectB) ?? 0
         var multiply = firstNum * secdNum
         productDisplayLabel.text = "The Product is \(multiply)"
+        var even = multiply % 2
+        //var odd = Int(multiply) ?? odd#
         
+        if multiply == 64
+        {
+            imgViewA.image = UIImage(named: "lonk")
+        }
+        if even == 0
+        {
+            imgViewC.image = UIImage(named: "kat")
+        }
+        if even != 0
+        {
+            imgViewB.image = UIImage(named:"pikchu")
+        }
+        //if multiply == even{imgViewC.image = UIImage(named: "kat")}
+        //if multiply == odd{ imgViewB.image = UIImage(named: "pikchu")}
         
-        
+    
     }
     
     
     
-
+    @IBAction func resetButton(_ sender: Any) {
+        //.ishidden = true
+        imgViewB.isHidden = true
+        imgViewC.isHidden = true
+        imgViewA.isHidden = true
+        productDisplayLabel.isHidden = true
+        insrtText1.text = ""
+        addText2.text = ""
+        
+    }
+    
 }
 
