@@ -59,6 +59,13 @@ class ViewController: UIViewController {
     
             
     @IBAction func calculatedProduct(_ sender: Any) {
+        imgViewB.isHidden = false
+        imgViewC.isHidden = false
+        imgViewA.isHidden = false
+        productDisplayLabel.isHidden = false
+//        insrtText1.text = ""
+//        addText2.text = ""
+//
         //double ?? is an optional, it will assign the default value to the right of the ?? if user doesnt enter anything
         dataCollectA = insrtText1.text ?? ""
         
@@ -74,15 +81,24 @@ class ViewController: UIViewController {
         if multiply == 64
         {
             imgViewA.image = UIImage(named: "lonk")
+            imgViewB.isHidden = true
         }
         if even == 0
         {
             imgViewC.image = UIImage(named: "kat")
+            imgViewB.isHidden = true
+            imgViewA.isHidden = true
+        }
+        if multiply == 64 {
+            imgViewA.isHidden = false
         }
         if even != 0
         {
             imgViewB.image = UIImage(named:"pikchu")
+            imgViewA.isHidden = true
+            imgViewC.isHidden = true
         }
+        
         //if multiply == even{imgViewC.image = UIImage(named: "kat")}
         //if multiply == odd{ imgViewB.image = UIImage(named: "pikchu")}
         
